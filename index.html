@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Conversor de Unidades</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>Conversor de Unidades</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#calculadora">Calculadoras</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Conversão Fácil e Rápida<br>Entre Unidades</h2>
+    <p>Um projeto simples com HTML, CSS e JavaScript para ajudar você a converter medidas com eficiência e clareza.</p>
+  </section>
+
+  <section class="descricao">
+    <h3>Descrição</h3>
+    <p>Este projeto consiste em um Conversor de Unidades desenvolvido com HTML, CSS e JavaScript. Seu objetivo é permitir que o usuário converta valores entre diferentes unidades de medida, de forma simples e rápida, por meio de uma interface intuitiva.</p>
+    <p>O conversor abrange categorias comuns, como comprimento, temperatura e massa, oferecendo menus de seleção para definir as unidades de origem e destino, além de um campo para inserir o valor a ser convertido.</p>
+    <p>A aplicação realiza os cálculos automaticamente e exibe o resultado ao usuário, tornando-se útil em situações cotidianas, acadêmicas ou profissionais que envolvam conversões frequentes de unidades.</p>
+  </section>
+
+
+  <section class="calculadora" id="calculadora">
+    <h2>Calculadora Simples</h2>
+
+    <div class="calculo">
+      <label for="valor">Digite um número:</label>
+      <input type="number" id="valor" />
+    
+      <br><br>
+    
+      <label for="operacao">Escolha a operação:</label>
+      <select id="operacao">
+        <option value="multiplicar">Multiplicar por 2</option>
+        <option value="dividir">Dividir por 2</option>
+        <option value="somar">Somar 2</option>
+      </select>
+    
+      <br><br>
+  
+      <button onclick="calcular()">Calcular</button>
+    
+      <p id="resultado"></p>
+    </div>
+
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
