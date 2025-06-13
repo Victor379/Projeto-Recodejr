@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-
   <title>Conversor de Unidades</title>
-
 </head>
+
 <body>
 
   <header>
@@ -15,8 +15,8 @@
     <nav>
       <ul>
         <li><a href="#hero">Início</a></li>
-        <li><a href="#calculadora">Calculadoras</a></li>
-        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
       </ul>
     </nav>
   </header>
@@ -33,31 +33,112 @@
     <p>A aplicação realiza os cálculos automaticamente e exibe o resultado ao usuário, tornando-se útil em situações cotidianas, acadêmicas ou profissionais que envolvam conversões frequentes de unidades.</p>
   </section>
 
-
   <section class="calculadora" id="calculadora">
-    <h2>Calculadora Simples</h2>
+    <h2>Calculadora de unidades</h2>
 
-    <div class="calculo">
-      <label for="valor">Digite um número:</label>
-      <input type="number" id="valor" />
-    
-      <br><br>
-    
-      <label for="operacao">Escolha a operação:</label>
-      <select id="operacao">
-        <option value="multiplicar">Multiplicar por 2</option>
-        <option value="dividir">Dividir por 2</option>
-        <option value="somar">Somar 2</option>
+    <div class="calculo" id="calculo">
+      <label for="unidade">Selecione a Unidade:</label>
+      <select id="unidade">
+        <option value="">Selecione</option>
+        <option value="comprimento">Comprimento</option>
+        <option value="Temperatura">Temperatura</option>
+        <option value="Massa">Massa</option>
       </select>
-    
-      <br><br>
-  
-      <button onclick="calcular()">Calcular</button>
-    
+
+      <label for="inputvalor">Digite o valor:</label>
+      <input type="number" id="inputvalor" />
+
+      <!--Comprimento-->
+      <div id="select-comprimento" style="display:none;">
+        <label>De:
+          <select id="comprimentovalor">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
+        </label>
+        <label>Para:
+          <select id="comprimentoresultado">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Temperatura -->
+      <div id="select-temperatura" style="display:none;">
+        <label>De:
+          <select id="temperaturavalor">
+            <option value="C">C</option>
+            <option value="F">F</option>
+            <option value="K">K</option>
+          </select>
+        </label>
+        <label>Para:
+          <select id="temperaturarresultado">
+            <option value="C">C</option>
+            <option value="F">F</option>
+            <option value="K">K</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Massa -->
+      <div id="select-massa" style="display:none;">
+        <label>De:
+          <select id="massavalor">
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+          </select>
+        </label>
+        <label>Para:
+          <select id="massaresultado">
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+          </select>
+        </label>
+      </div>
+
+      <button onclick="main()">Calcular</button>
       <p id="resultado"></p>
     </div>
-
   </section>
-<script src="script.js"></script>
+
+  <section id="sobre">
+  <h2>Sobre Nós</h2>
+  <div class="perfis">
+    <!-- Pessoa 1 -->
+    <div class="perfil">
+      <div class="foto">
+        <img src="Nova pasta/Foto Victor.jpeg" alt="Foto Victor">
+      </div>
+      <h3>Victor Fiuza dos Santos</h3>
+      <div class="links">
+        <a href="https://github.com/Victor379" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/victor__fiuza/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Pessoa 2 -->
+    <div class="perfil">
+      <div class="foto">
+        <img src="Nova pasta/Foto Rafael.jpeg" alt="foto Rafael">
+      </div>
+      <h3>Raphael Batista dos Santos</h3>
+      <div class="links">
+        <a href="https://github.com/Raphaelsharon" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/r.b.sant0/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+
 </body>
+
+
+
 </html>
