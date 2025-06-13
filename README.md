@@ -18,5 +18,6 @@ Este conversor de unidades foi construído utilizando **HTML**, **CSS** e **Java
 
 ## 🖼️ Layout
 
-O layout foi inspirado em modelos modernos, com esquema de cores escuro (dark mode) e elementos destacados em roxo e branco para melhorar a legibilidade e o visual.
+O layout foi inspirado em modelos modernos, com esquema de cores escuro (dark mode) e elementos destacados em roxo e branco para melhorar a legibilidade e o visual. 
+Para Vizualizar : https://victor379.github.io/Projeto-Recodejr/
 
